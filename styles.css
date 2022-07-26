@@ -43,6 +43,24 @@ nav a {
     font-size: 1.2rem;
     }
 
+    .clickable {
+        transition: all .5s ease-out;
+     }
+     
+     .clickable:hover, .clickable:focus { /* Used for nav bar items */
+     /*    font-size: 1.3rem; */
+     color: black;
+         transition-duration: .5s;
+     }
+     
+     
+     .clickable:active {  /* Used for nav bar items */
+         color: linen;
+         transition:none;
+     }
+
+
+
 /* ------------------------------------------------------------------------- */
 /* Puts the main and footer sections lower to make room for the sticky nav bar at the top of the page */
 /*main, footer {
@@ -55,8 +73,9 @@ h1 {
     font-family: 'Rock Salt', cursive;    
     text-align: center;
     font-size: 8vw;
-    padding: 2rem 0rem;
-    padding-top: calc(25vh);
+/*   padding: 2rem 0rem;
+    padding-top: calc(25vh); */
+    padding-top: calc(50vh - 8rem); 
     
 }
 
@@ -64,14 +83,22 @@ h2 {
     margin-left: 30%;
     font-family: 'Rock Salt', cursive; 
     font-size: 3vw;
-    padding: 0rem 0rem 2rem 0rem;
+    padding: 2rem 0rem 2rem 0rem;
 }
 
 h3 {
     font-size: 4vw;
-    margin: 1rem 0rem 2rem 0rem;
+    margin: 2rem 0rem 2rem 0rem;
     text-align: center;
 }
+
+
+.credits-heading {
+    font-size: 1rem;
+    font-weight: 700;
+    text-align: left;
+}
+
 .quote-with-image {
     z-index: 1;
     width: 90vw;   
@@ -80,6 +107,7 @@ h3 {
     background-image: linear-gradient(to bottom, rgba(255,255,255,0.5), rgba(255,255,255,0.5)),
     url("resources/2.jpg");
     background-size: cover;
+    background-position-x: center;
     border-radius: 10px 100px / 120px;
     box-shadow: 0 0 8px 8px white inset;
 }
@@ -103,7 +131,7 @@ section {
 
 p {
     margin: 1rem 15rem 2rem 15rem;
-    line-height: 1.2;
+    line-height: 1.75;
 }
 
 
@@ -223,3 +251,26 @@ width: 30vw;
 .move-anchor-up {
     scroll-margin-top: 4.0625rem;
 }
+
+.credit {
+    font-size: 1rem;
+}
+
+.email {
+    display: flex;
+    justify-content: center;
+}
+
+.email-icon {
+    max-width: 50px;
+}
+
+.email-icon > a > img {
+    width: 50px;
+}
+
+.divider {      
+    width: 100%;
+    border-bottom: solid 1px black;
+    background-color: white;
+    }
