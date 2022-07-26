@@ -126,10 +126,14 @@ h3 {
 }
 
 section {
+    max-width: 1150px;
     margin-bottom: 2rem;
+    line-height: 1.75;
+    margin-left: auto;
+    margin-right: auto;
 }
 
-p {
+p, summary {
     margin: 1rem 15rem 2rem 15rem;
     line-height: 1.75;
 }
@@ -143,6 +147,7 @@ p {
 
 li {
     margin-bottom: 1rem;
+    line-height: 1.75;
 }
 
 .centred {
@@ -176,11 +181,6 @@ li {
 }
 
 
-
-summary {
-    margin: 1rem 10rem 2rem 10rem;
-    line-height: 1.2;
-}
 
 .diary-writing {
     color: black; 
@@ -274,3 +274,44 @@ width: 30vw;
     border-bottom: solid 1px black;
     background-color: white;
     }
+
+
+
+
+    @media only screen and (max-width:950px) {
+        p, summary {   
+        margin: 1rem 10rem 2rem 10rem;
+        }
+
+        .regular-list {
+            list-style: disc;
+            margin: 1rem 2rem 2rem 10rem;
+        } 
+    
+    }
+
+    @media only screen and (max-width:750px) {
+        p, summary {   
+        margin: 1rem 5rem 2rem 5rem;
+        }
+
+        .regular-list {
+            list-style: disc;
+            margin: 1rem 2rem 2rem 5rem;
+        } 
+    
+    }
+
+
+    @media only screen and (max-width:450px) {
+        p, summary {   
+        margin: 1rem 2rem 2rem 2rem;
+        }
+
+        .regular-list {
+            list-style: disc;
+            margin: 1rem 2rem 2rem 6rem;
+        } 
+    
+    }
+    
